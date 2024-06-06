@@ -6,5 +6,9 @@ class TestMain(unittest.TestCase):
     result = main.testScoreRank()
     self.assertEqual(result, "Accept")
 
+  def test_reject_criteria(self):
+    result = main.testScoreRank()
+    self.assertEqual(result, "Reject")
+  
 if __name__ == "__main__":
   unittest.main()
